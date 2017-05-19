@@ -1,0 +1,187 @@
+@charset "utf-8";
+
+/* CSS Document */
+
+body {
+    background-color: #f4f4f4;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px;
+    line-height: 1.5;
+    padding: 0;
+    margin: 0;
+}
+
+/* Container */
+
+.container {
+    width: 80%;
+    overflow: hidden;
+	position: relative;
+}
+
+
+/* Showcase */
+
+#showcase {
+    margin-top: 50px; 		/* Distance from top to start displaying */
+    min-height: 400px;
+    text-align: center;
+    margin-bottom: -125px;
+}
+
+#showcase .container {
+    margin: auto;
+}
+
+#showcase h1 {
+    margin-top: 0px;
+    font-size: 55px;
+    margin-bottom: 0px;
+}
+
+#showcase p {
+    margin-top: -20px;
+    font-size: 25px;
+}
+
+
+/* Boxes */
+
+#Erhvers .container {
+    margin-left: auto;
+}
+
+#Erhvers .box {
+    float: left;
+    padding: 30px;
+    text-align: left;
+}
+
+#Erhvers .box img {
+    width: 230px;
+    height: 230px;
+    margin-bottom: -20px;
+	cursor: pointer;
+}
+
+
+#Erhvers h1 {
+    margin-bottom: -20px;
+    text-align: center;
+}
+
+
+/* Footer */
+
+footer {
+    padding: 20px;
+    margin-top: 20px;
+    text-align: center;
+}
+
+
+/* Modal */
+
+.modal {
+    display: none; 							/* Hidden by default */
+    position: fixed;						/* Stay in place */
+    z-index: 1;        						/* Always on top */
+    left: 0;
+    top: 0;
+    width: 100%;    						/* Full width */
+    height: 100%;							/* Full height */
+    overflow: auto;							/* Enable scroll if needed */
+    background-color: rgb(0, 0, 0);			/* Fallback color */
+    background-color: rgba(0, 0, 0, 0.4);	/* Black w/ opacity */
+}
+
+.modal_content {
+    position: relative;			/* Need to set this to be able to animate movement */
+    background-color: #fefefe;
+    margin: 5% auto;			/* 5% from the top and centered */
+    padding: 5px;
+    border: 1px solid #888;
+    width: 80%;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    -webkit-animation-name: animatetop;
+    -webkit-animation-duration: 0.4s;
+    animation-name: animatetop;
+    animation-duration: 0.4s;
+}
+
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.modal_header {
+    padding: 2px 16px;
+    background-color: antiquewhite;
+}
+
+.modal_body {
+    padding: 2px 16px;
+}
+
+.modal_footer {
+    padding: 2px 16px;
+    background-color: antiquewhite;
+}
+
+
+/* Animations */
+
+@-webkit-keyframes animatetop {
+    from {
+        top: -300px;
+        opacity: 0
+    }
+    to {
+        top: 0;
+        opacity: 1
+    }
+}
+
+@keyframes animatetop {
+    from {
+        top: -300px;
+        opacity: 0
+    }
+    to {
+        top: 0;
+        opacity: 1
+    }
+}
+
+
+/* For mobile phones/small screens */
+
+@media(max-width:540px) {
+    #showcase h1 {
+        font-size: 40px;
+    }
+}
+
+#small_logo {
+	width: 64px;
+}
+
+#profile_pic {
+	width: 128px;
+}
+
+#modal_image {
+	max-height: 400px;
+	margin-left: auto;
+	margin-right: auto;
+	display: block;
+}

@@ -1,0 +1,6 @@
+- Make everything database
+
+# Database
+- Add Modal header, body, text,  and image to DB
+- Initial setup of DB
+
