@@ -1,5 +1,12 @@
 # Portfolio_Website
 This is my website project for showing my portfolio.
-It will be continually kept updated with all new changes.
+The website is being built from scratch, for my needs, with responsive dynamic webdesign in mind.
 
-I have choosen to design this website from scratch instead of using a CMS system to further my skillset and to have the freedom to do as I please.
+## Technology
+* Jquery
+
+## Goals
+* Comments everywhere
+* Easy Scalability
+* Intuitive UI
+* Fast & Responsive
