@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<BOXES>
+	<SECTION>
+		<SECTIONTITLE>SectionTitle01</SECTIONTITLE>
+			<BOX id="Box1">
+				<TITLE>Some Title</TITLE>
+				<HEADER>Some Header Text</HEADER>
+				<BODYTXT>
+				<![CDATA[
+				Some text
+				<p class="Some_Class">Some html text</p>
+				]]>
+				</BODYTXT>
+				<FOOTER>Some Footer Text</FOOTER>
+				<ID>Box1</ID>
+			</BOX>
+			<BOX id="Box_Random">
+				<TITLE>Some Title</TITLE>
+				<HEADER>Some Header Text</HEADER>
+				<BODYTXT>
+				<![CDATA[
+				Some text
+				<p id="Some_ID">Some html text</p>
+				]]>
+				</BODYTXT>
+				<FOOTER>Some Footer Text</FOOTER>
+				<ID>Box_8008</ID>
+			</BOX>
+	</SECTION>
+	<SECTION>
+		<SECTIONTITLE>RandomSectionTitle</SECTIONTITLE>
+			<BOX id="RandomID">
+				<TITLE>Some Title</TITLE>
+				<HEADER>Some Header Text</HEADER>
+				<BODYTXT>Some text</BODYTXT>
+				<FOOTER>Some Footer Text</FOOTER>
+				<ID>RandomID</ID>
+			</BOX>
+
+	</SECTION>
+</BOXES>
