@@ -3,24 +3,20 @@
 /* CSS Document */
 
 body {
-    background-color: #f4f4f4;
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 15px;
-    line-height: 1.5;
-    padding: 0;
-    margin: 0;
+	background-color: #f4f4f4;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 15px;
+	line-height: 1.5;
+	padding: 0;
+	margin: 0;
 }
 
-/* Container */
-
 .container {
-    width: 80%;
-    overflow: hidden;
+	width: 80%;
+	overflow: hidden;
 	position: relative;
 }
 
-
-/* Showcase */
 
 #showcase {
     margin-top: 50px; 		/* Distance from top to start displaying */
@@ -30,58 +26,49 @@ body {
 }
 
 #showcase .container {
-    margin: auto;
+	margin: auto;
 }
 
 #showcase h1 {
-    margin-top: 0px;
-    font-size: 55px;
-    margin-bottom: 0px;
+	margin-top: 0px;
+	font-size: 55px;
+	margin-bottom: 0px;
 }
 
 #showcase p {
-    margin-top: -20px;
-    font-size: 25px;
+	margin-top: -20px;
+	font-size: 25px;
 	margin-bottom: -1px;
 }
 
-
-/* Boxes */
-
 #Erhvers .container {
-    margin-left: auto;
+	margin-left: auto;
 }
 
 #Erhvers .box {
-    float: left;
-    padding: 30px;
-    text-align: left;
+	float: left;
+	padding: 30px;
+	text-align: left;
 }
 
 #Erhvers .box img {
-    width: 230px;
-    height: 230px;
-    margin-bottom: -20px;
+	width: 230px;
+	height: 230px;
+	margin-bottom: -20px;
 	cursor: pointer;
 }
 
-
 #Erhvers h1 {
-    margin-bottom: -20px;
-    text-align: center;
+	margin-bottom: -20px;
+	text-align: center;
 }
-
-
-/* Footer */
 
 footer {
-    padding: 20px;
-    margin-top: 20px;
-    text-align: center;
+	padding: 20px;
+	margin-top: 20px;
+	text-align: center;
 }
 
-
-/* Modal */
 
 .modal {
     display: none; 							/* Hidden by default */
@@ -103,6 +90,7 @@ footer {
     padding: 5px;
     border: 1px solid #888;
     width: 80%;
+	max-width: 1000px;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
     -webkit-animation-name: animatetop;
     -webkit-animation-duration: 0.4s;
@@ -111,83 +99,57 @@ footer {
 }
 
 .close {
-    color: #aaa;
-    float: right;
-    font-size: 28px;
-    font-weight: bold;
+	color: #aaa;
+	float: right;
+	font-size: 28px;
+	font-weight: bold;
 }
 
 .close:hover,
 .close:focus {
-    color: black;
-    text-decoration: none;
-    cursor: pointer;
+	color: black;
+	text-decoration: none;
+	cursor: pointer;
 }
 
 .modal_header {
-    padding: 2px 16px;
-    background-color: antiquewhite;
+	padding: 2px 16px;
+	background-color: antiquewhite;
 }
 
 .modal_body {
-    padding: 2px 16px;
+	padding: 2px 16px;
 }
 
 .modal_footer {
-    padding: 2px 16px;
-    background-color: antiquewhite;
+	padding: 2px 16px;
+	background-color: antiquewhite;
 }
 
 
 /* Animations */
 
 @-webkit-keyframes animatetop {
-    from {
-        top: -300px;
-        opacity: 0
-    }
-    to {
-        top: 0;
-        opacity: 1
-    }
+	from {
+		top: -300px;
+		opacity: 0
+	}
+	to {
+		top: 0;
+		opacity: 1
+	}
 }
 
 @keyframes animatetop {
-    from {
-        top: -300px;
-        opacity: 0
-    }
-    to {
-        top: 0;
-        opacity: 1
-    }
+	from {
+		top: -300px;
+		opacity: 0
+	}
+	to {
+		top: 0;
+		opacity: 1
+	}
 }
-
-
-/* For mobile phones/small screens */
-/* This is *sorta* responsive design */
-@media(max-width:950px) {
-    #modal_image {
-        max-width: 600px;
-    }
-}
-@media(max-width:800px) {
-    #modal_image {
-        max-width: 500px;
-    }
-}
-@media(max-width:700px) {
-    #modal_image {
-        max-width: 400px;
-    }
-}
-
-@media(max-width:540px) {
-    #showcase h1 {
-        font-size: 40px;
-    }
-}
-
 
 #small_logo {
 	height: 64px;
@@ -202,4 +164,49 @@ footer {
 	margin-left: auto;
 	margin-right: auto;
 	display: block;
+}
+
+.hidden {
+	display: none;
+}
+
+
+
+#modal_image_btn_div {
+	text-align: center;
+	margin-top: 5px;
+}
+
+
+/* For mobile phones/small screens */
+
+
+/* This is *sorta* responsive design */
+
+@media(max-width:950px) {
+	#modal_image {
+		max-width: 600px;
+	}
+}
+
+@media(max-width:800px) {
+	#modal_image {
+		max-width: 500px;
+	}
+}
+
+@media(max-width:700px) {
+	#modal_image {
+		max-width: 400px;
+	}
+}
+
+@media(max-width:540px) {
+	#showcase h1 {
+		font-size: 40px;
+	}
+}
+#modal_image_btn {
+	height: 30px;
+	cursor: pointer;
 }

@@ -6,20 +6,25 @@
 	<meta name="viewport" content="width=device-width">
 	<title>Kristian Vollmer</title>
 	<link href="CSS/Main.css" rel="stylesheet" type="text/css" />
-	<script type="application/javascript" src="JScripts/xmlParse.js"></script>
+	<script type="application/javascript" src="JScripts/xmlFuncs.js"></script>
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 </head>
 
 <script>
-	// When site has been fully loaded run xmlParser
+	// When site has been fully loaded execute initial scripts
 	$(document).ready(function() {
-		xmlParser();
+		xmlToHTML();
+		// Some minor animations
+		$("#insertHere").hide();
+		$("#insertHere").fadeIn(1000);
+		$("p.hidden").fadeIn(2000);
+		$("section.hidden").slideDown(750);
 	});
 </script>
 
 <body>
 	<!-- This is the "headline" of the page -->
-	<section id="showcase">
+	<section id="showcase" class="hidden">
 		<div class="container">
 			<img id="profile_pic" src="img/pic.png">
 			<h1>Kristian Vollmer</h1>
@@ -43,7 +48,14 @@
 			</div>
 			<div class="modal_body">
 				<img id="modal_image" src="">
-				<p id="modal_body">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum laoreet sollicitudin molestie. Integer arcu mi, scelerisque quis venenatis in, auctor quis justo. Suspendisse eros magna, consequat in euismod id, suscipit ac dui. Vivamus dapibus diam vel tortor viverra, eget efficitur ex mollis. Vivamus ornare facilisis turpis vel pretium. Nulla et lectus posuere tellus cursus rutrum. Pellentesque ultrices eget diam ac lobortis. Maecenas condimentum libero lorem. Nulla aliquam justo nec elit molestie congue. Donec ut lectus est. Pellentesque non odio quam. Nullam commodo urna id viverra consectetur. Curabitur leo diam, volutpat vel enim vitae, rhoncus vestibulum enim. Morbi a arcu convallis, pretium dolor ut, ultricies ante. Sed faucibus ex sollicitudin ligula consectetur, quis volutpat augue auctor.</p>
+				<div id="modal_image_btn_div">
+				<!-- TODO: Animate / Make more responsive -->
+					<img id="modal_image_btn" onclick="modalImageChange(0);" src="../vector/back.svg">
+					<img id="modal_image_btn" onclick="modalImageChange(1);" src="../vector/next.svg">
+					<!--<button onclick="modalImageChange(0);">&lt&lt</button>
+					<button onclick="modalImageChange(1);">>></button>-->
+				</div>
+				<p id="modal_body"></p>
 			</div>
 			<div class="modal_footer">
 				<h3 id="modal_footer">Footer</h3>
@@ -52,7 +64,7 @@
 	</div>
 
 	<footer>
-		<p>Kristian Vollmer, Copyright &copy; 2017</p>
+		<p class="hidden">Kristian Vollmer, Copyright &copy; 2017</p>
 	</footer>
 	<!-- Loading this script at the end of page load to make it work -->
 	<script src="JScripts/modalLogic.js" type="text/javascript"></script>
